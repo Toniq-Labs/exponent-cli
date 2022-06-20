@@ -1,0 +1,35 @@
+{
+  "name": "ExponentCLI",
+  "version": "1.0.0",
+  "description": "A CLI to manage EXT tokens on the Internet Computer",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "ToniqLabs",
+  "license": "MIT",
+  "dependencies": {
+    "@dfinity/agent": "^0.9.1",
+    "@dfinity/candid": "^0.9.1",
+    "@dfinity/identity": "^0.9.1",
+    "@dfinity/principal": "^0.9.1",
+    "axios": "^0.21.1",
+    "bip39": "^3.0.4",
+    "chalk": "^4.1.2",
+    "commander": "^9.3.0",
+    "conf": "^10.1.2",
+    "esm-wallaby": "^3.2.25",
+    "fetch": "^1.1.0",
+    "image-thumbnail": "^1.0.15",
+    "json-bigint": "^1.0.0",
+    "mime": "^3.0.0",
+    "node-fetch": "^2.6.1",
+    "prompt": "^1.3.0",
+    "sjcl": "^1.0.8",
+    "yesno": "^0.4.0"
+  },
+  "bin": {
+    "exponent": "./index.js"
+  }
+}
