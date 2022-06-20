@@ -146,7 +146,6 @@ commands.wallet_import = async (handle, options) => {
 	if (!wallets) wallets = {};
 	if (wallets.hasOwnProperty(handle)) return outputError("That wallet handle is already taken");
 	var wallet = {};
-	console.log(options);
 	var seed = options.seed.join(" ");;
 	var id = getId(seed);
 	wallet.principal = id.getPrincipal().toText();

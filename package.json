@@ -1,5 +1,5 @@
 {
-  "name": "ExponentCLI",
+  "name": "@toniq-labs/exponent",
   "version": "1.0.0",
   "description": "A CLI to manage EXT tokens on the Internet Computer",
   "main": "index.js",
