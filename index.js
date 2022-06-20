@@ -80,12 +80,12 @@ nft
 nft
 	.description('Mint all the assets in the "assets" folder')
 	.command('mint')
-	.option('-p, --password', 'If the current wallet has a password you need to specify it here')
+	.option('-p, --password <password>', 'If the current wallet has a password you need to specify it here')
 	.action(commands.nft_mint);
 nft
 	.description('Airdrop random assets to the airdresses in the airdrop.txt file')
 	.command('airdrop')
-	.option('-p, --password', 'If the current wallet has a password you need to specify it here')
+	.option('-p, --password <password>', 'If the current wallet has a password you need to specify it here')
 	.action(commands.nft_airdrop);
 	
 program.parse();
