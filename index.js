@@ -83,6 +83,10 @@ nft
 	.option('-p, --password <password>', 'If the current wallet has a password you need to specify it here')
 	.action(commands.nft_mint);
 nft
+	.description('Get the canister ID for the current NFT project')
+	.command('canister')
+	.action(commands.nft_canister);
+nft
 	.description('Airdrop random assets to the airdresses in the airdrop.txt file')
 	.command('airdrop')
 	.option('-p, --password <password>', 'If the current wallet has a password you need to specify it here')

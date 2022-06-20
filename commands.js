@@ -333,6 +333,7 @@ commands.nft_mint = async (options) => {
         outputError("Error generating thumbnail: "+missing[i]);
       }
     };
+    outputUpdate(" ");
   };
   var config = JSON.parse(fs.readFileSync("./config.json"));
   var nftCanister = extjs.connect("https://boundary.ic0.app/", identity).canister(config.canister, 'ext');
@@ -386,6 +387,12 @@ commands.nft_mint = async (options) => {
   };
 };
 
+commands.nft_canister = async () => {
+	if (!fs.existsSync("./config.json")) return outputError("You are not within a valid exponent project directory. You can create a new project using 'exponent nft create'");
+  var config = JSON.parse(fs.readFileSync("./config.json"));
+  output("Canister ID: " + config.canister);
+  outputUpdate("View on ICScan: https://icscan.io/canister/"+config.canister);
+};
 commands.nft_airdrop = async (options) => {
 	if (!fs.existsSync("./config.json")) return outputError("You are not within a valid exponent project directory. You can create a new project using 'exponent nft create'");
 	//TODO integrate extjs
